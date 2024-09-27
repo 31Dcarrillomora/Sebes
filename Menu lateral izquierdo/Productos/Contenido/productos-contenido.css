@@ -1,0 +1,284 @@
+html {
+    background-color:#08c5ff ;
+    background-size: 100%;
+    margin: 0;
+    padding: 30px;
+    width: fit-content;
+}
+
+.Contenedor{
+    display: grid;
+    margin-left: 290px; /* Deja espacio para la barra lateral */
+    padding: 30px;
+    gap: 20px; /* Espacio entre tarjetas */
+    max-width: 1200px; /* Limitar el ancho del contenedor */
+    width: 100vh;
+}
+/**-----------------------------------configuración de tarjetas-----------------------------------*/
+.tarjetas{ 
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    width: 920px; /* Limitar el ancho de las tarjetas */
+    height: 800px;
+}
+
+.text-product {
+    font-size: 30px;
+    text-align: center;
+}
+.text-p {
+    font-size: 15px;
+    position: relative;
+    left: -10px;
+}
+
+/**----------------------------------------------------------------------------------------------------*/
+
+/**---------------------------------------Configuración de imágenes-----------------------------------------*/
+.contenedor-img {
+    width: 80%;  /* La imagen se adapta al ancho de la tarjeta */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    object-fit: cover;  /* Ajusta la imagen para que cubra toda el área sin distorsión */
+    display: block;
+    margin: 0 auto 15px auto; /* Centra la imagen horizontalmente y agrega margen inferior */
+}
+/**-------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* -----------------------------Estilos generales de menu Lateral izquierdo------------------------------------------- */
+.menu-lateral {
+    /* Fondo de la barra lateral */
+    background-color: #f1eaea;
+    
+    /* Ancho fijo de la barra lateral */
+    width: 220px;
+    
+    /* Espacio interior alrededor del contenido */
+    padding: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    
+    /* Usamos CSS Grid para organizar las secciones de la barra (logo, menú y usuario) */
+    display: grid;
+    
+    /* El grid tiene 3 filas: auto (tamaño automático para el logo), 1fr (ocupa todo el espacio disponible para el menú), y auto para la parte inferior (usuario) */
+    grid-template-rows: auto 1fr auto;
+    z-index: 1;
+    
+}
+.text-name-marca{
+    margin-bottom: 9px; /* Espacio adicional por debajo del texto */
+    font-weight: bold; /* Negrita el texto */
+    text-align: center; /* Centra el texto */
+    font-size: 30px; /* Tamaño del texto */
+    padding-bottom: 20px; /* Ajusta este valor según necesites */
+}
+
+.logo {
+    /* Flexbox para alinear el ícono y el texto en línea */
+    display: grid;
+   /* align-items: center; /* Centra verticalmente los elementos dentro de este contenedor */
+    /* Margen inferior para separar el logo del resto del contenido */
+    margin-bottom: 10px; /* Espacio adicional por debajo del logo */
+    position:relative;
+    right: -1px;
+    top:-20px;
+    width: 90px;
+    /* Tamaño del ícono */
+    font-size: 24px; /* Tamaño del texto para el ícono */
+    margin: 30px;
+    padding: 5;
+}
+
+
+.text-name-marca{
+transform: translateY(-50px);
+margin-bottom: -50px; /** Espacio adicional por debajo del texto **/
+font-weight:bold; /** Negrita el texto **/
+text-align: center; /** Centra el texto **/
+font-size: 30px; /**Tamaño del texto **/
+}
+
+
+/*---------Linea debajo del texto-------------*/
+hr {
+background-color: rgb(5, 4, 4);
+opacity: 80%;
+width: 150%;
+height: 2px; /* Tamaño de la línea */
+border: none;
+position: relative;
+left: -45px;
+align-items: center;
+top: 40px;
+}
+
+footer {
+    background-color: #f1eaea;
+    color: rgb(0, 0, 0);
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; 
+    width: 137%; /* Ajusta el ancho al 86% de la pantalla */
+    position: static; /* El pie de página se coloca después del contenido */
+    height: 40px; /* Altura fija **/
+    transform: translateY(40px);
+}   
+
+/* Estilos para la lista del menú principal */
+.menu {
+    /* Eliminamos las viñetas de la lista */
+    list-style: none; /* Sin viñetas en la lista */
+    
+    /* Eliminamos el padding predeterminado */
+    padding: 0; /* Sin espacio interior en la lista */
+}
+
+/* Estilos para cada elemento de la lista */
+.menu li {
+    /* Espacio inferior entre cada opción del menú */
+    margin-bottom: 10px; /* Espacio adicional por debajo de cada elemento de menú */
+    position: relative;
+    left: -10px;
+}
+
+/* Estilos para los enlaces dentro del menú */
+.menu a {
+    /* Flexbox para alinear el ícono y el texto en cada enlace */
+    display: flex; /* Hacemos el enlace un contenedor flex */
+    align-items: center; /* Centra verticalmente los elementos dentro del enlace */
+    
+    /* Espacio interior para hacer que los enlaces sean "clicables" en una zona más amplia */
+    padding: 10px; /* Espacio interior del enlace */
+    
+    /* Eliminamos el subrayado predeterminado de los enlaces */
+    text-decoration: none; /* Sin subrayado en el texto */
+    
+    /* Color del texto */
+    color: #ffffff; /* Color blanco para el texto */
+    
+    /* Bordes redondeados para un mejor aspecto visual */
+    border-radius: 5px; /* Esquinas redondeadas */
+    
+    /* Transición suave para cambios de color de fondo */
+    transition: background-color 0.3s ease; /* Efecto de transición para el color de fondo */
+    
+    /* Establecemos el color de fondo de los enlaces */
+    background-color: #0d6efd; /* Fondo negro para los enlaces */
+}
+
+/* Estilos para los submenús dentro de los elementos del menú */
+.submenu {
+    /* Los submenús no se muestran por defecto */
+    display: none; /* Ocultar los submenús inicialmente */
+}
+
+/* Mostrar el submenú al pasar el ratón sobre el elemento del menú */
+.menu li:hover .submenu {
+    /* Mostramos el submenú al hacer hover sobre el elemento del menú */
+    display: block; /* Cambiamos a block para mostrar el submenú */
+    
+    /* Quitamos las viñetas del submenú */
+    list-style: none; /* Sin viñetas en el submenú */
+}
+
+
+    
+
+   
+/*-------------------------------------Dispositivos Responsive------------------------------------------------------------*/
+
+/* desconocido (más de 100px) */
+@media (min-width: 100px) {
+    .Contenedor {
+        display: grid;
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+
+/* desconocido (más de 200px) */
+@media (min-width: 200px) {
+    .Contenedor {
+        display: grid;
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+
+/* desconocido (más de 300px) */
+@media (min-width: 300px) {
+    .Contenedor {
+        display: grid;
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+
+/* desconocido (más de 400px) */
+@media (min-width: 400px) {
+    .Contenedor {
+        display: grid;
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+                
+
+/* desconocido (más de 500px) */
+@media (min-width: 500px) {
+    .Contenedor {
+        display: grid;
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+
+/* desconocido (más de 600px) */
+@media (min-width: 600px) {
+    .Contenedor {
+        display: grid;
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+
+
+/* desconocido (más de 700px) */
+@media (min-width: 700px) {
+    .Contenedor {
+        display: grid;
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+
+/* desconocido (más de 800px) */
+@media (min-width: 800px) {
+    .Contenedor {
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+        
+/* desconocido (más de 900px) */
+@media (min-width: 900px) {
+    .Contenedor {
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+
+/* desconocido (más de 1000px) ----*/
+@media (min-width: 1000px) {
+    .Contenedor {
+        grid-template-columns: 350px 350px 350px; /* Cuatro columnas de 200px */
+            }}
+
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 768px) {
+    .Contenedor {
+        grid-template-columns:  350px 350px 350px; /* Cuatro columnas de 200px */
+           }}
+
+/* Para pantallas grandes (laptops y escritorios) */
+@media (min-width: 1025px) {
+    .Contenedor {
+        grid-template-columns:  300px 300px 300px; /* Cuatro columnas de 200px */
+        
+       }}
+
+/*---------------------------------------------------------------------------------------------------------------*/
