@@ -128,12 +128,7 @@ body.loaded .Text-loader{
     text-align: start;
 }
 
-/**----------------------------------------------------------------------------------------------------*/
-
-
-
-
-
+/* -----------------------------Estilos generales de menu Lateral izquierdo------------------------------------------- */
 .logo {
     /* Flexbox para alinear el ícono y el texto en línea */
     display: grid;
@@ -149,86 +144,65 @@ body.loaded .Text-loader{
     margin: 30px;
     padding: 5;
 }
-
-
 .text-name-marca{
-    font-family: "Germania One", system-ui;
-    font-weight: 500;
-    font-style: normal;
 transform: translateY(-50px);
 margin-bottom: -50px; /** Espacio adicional por debajo del texto **/
+font-weight:bold; /** Negrita el texto **/
 text-align: center; /** Centra el texto **/
-font-size: 40px; /**Tamaño del texto **/
+font-size: 30px; /**Tamaño del texto **/
 }
-
-
 /*---------Linea debajo del texto-------------*/
 hr {
-background-color: rgb(5, 4, 4);
-opacity: 80%;
-width: 150%;
-height: 2px; /* Tamaño de la línea */
-border: none;
-position: relative;
-left: -45px;
-align-items: center;
-top: 40px;
-}
-
-
-footer {
-    background-color: #f1eaea;
-    color: rgb(0, 0, 0);
-    text-align: center; /* Centra el texto */
-    padding: 20px 0; 
-    width: 140%; /* Ajusta el ancho al 86% de la pantalla */
-    position: static; /* El pie de página se coloca después del contenido */
-    height: 40px; /* Altura fija **/
-    transform: translateY(48px);
-}   
-
-/* -----------------------------Estilos generales de menu Lateral izquierdo------------------------------------------- */
+    background-color: rgb(5, 4, 4);
+    opacity: 80%;
+    width: 150%;
+    height: 2px; /* Tamaño de la línea */
+    border: none;
+    position: relative;
+    left: -45px;
+    align-items: center;
+    top: 40px;
+    }
 .menu-lateral {
+    /* Fondo de la barra lateral */
     background-color: #f1eaea;
-    width: 220px;/* Ancho fijo de la barra lateral */
-    padding: 30px; /* Espacio interior alrededor del contenido */
+    
+    /* Ancho fijo de la barra lateral */
+    width: 220px;
+    
+    /* Espacio interior alrededor del contenido */
+    padding: 30px;
     position: fixed;
     left: 0;
     top: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
-    z-index: 1;
     
     /* Usamos CSS Grid para organizar las secciones de la barra (logo, menú y usuario) */
     display: grid;
     
     /* El grid tiene 3 filas: auto (tamaño automático para el logo), 1fr (ocupa todo el espacio disponible para el menú), y auto para la parte inferior (usuario) */
     grid-template-rows: auto 1fr auto;
+    z-index: 1;
+    
 }
-
- /*------------------------------------------------*/
-
 /* Estilos para la lista del menú principal */
 .menu {
     /* Eliminamos las viñetas de la lista */
-    list-style: none; /* Sin viñetas en la lista */
-    
+    list-style: none; /* Sin viñetas en la lista */  
     /* Eliminamos el padding predeterminado */
     padding: 0; /* Sin espacio interior en la lista */
 }
-
 /* Estilos para cada elemento de la lista */
 .menu li {
     /* Espacio inferior entre cada opción del menú */
-    margin-bottom: 15px; /* Espacio adicional por debajo de cada elemento de menú */
+    margin-bottom: 10px; /* Espacio adicional por debajo de cada elemento de menú */
     position: relative;
     left: -10px;
 }
-
 /* Estilos para los enlaces dentro del menú */
 .menu a {
-    
     /* Flexbox para alinear el ícono y el texto en cada enlace */
     display: flex; /* Hacemos el enlace un contenedor flex */
     align-items: center; /* Centra verticalmente los elementos dentro del enlace */
@@ -251,7 +225,6 @@ footer {
     /* Establecemos el color de fondo de los enlaces */
     background-color: #0d6efd; /* Fondo negro para los enlaces */
 }
-
 /* Estilos para los submenús dentro de los elementos del menú */
 .submenu {
     /* Los submenús no se muestran por defecto */
@@ -266,6 +239,18 @@ footer {
     /* Quitamos las viñetas del submenú */
     list-style: none; /* Sin viñetas en el submenú */
 }
+/**------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: #f1eaea;
+    color: rgb(0, 0, 0);
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; 
+    width: 140%; /* Ajusta el ancho al 86% de la pantalla */
+    position: static; /* El pie de página se coloca después del contenido */
+    height: 40px; /* Altura fija **/
+    transform: translateY(48px);
+}   
 
 /*-------------------------------------Dispositivos Responsive------------------------------------------------------------*/
 

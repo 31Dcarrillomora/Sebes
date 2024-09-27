@@ -82,6 +82,40 @@ html {
 
 
 /* -----------------------------Estilos generales de menu Lateral izquierdo------------------------------------------- */
+.logo {
+    /* Flexbox para alinear el ícono y el texto en línea */
+    display: grid;
+   /* align-items: center; /* Centra verticalmente los elementos dentro de este contenedor */
+    /* Margen inferior para separar el logo del resto del contenido */
+    margin-bottom: 10px; /* Espacio adicional por debajo del logo */
+    position:relative;
+    right: -1px;
+    top:-20px;
+    width: 90px;
+    /* Tamaño del ícono */
+    font-size: 24px; /* Tamaño del texto para el ícono */
+    margin: 30px;
+    padding: 5;
+}
+.text-name-marca{
+transform: translateY(-50px);
+margin-bottom: -50px; /** Espacio adicional por debajo del texto **/
+font-weight:bold; /** Negrita el texto **/
+text-align: center; /** Centra el texto **/
+font-size: 30px; /**Tamaño del texto **/
+}
+/*---------Linea debajo del texto-------------*/
+hr {
+    background-color: rgb(5, 4, 4);
+    opacity: 80%;
+    width: 150%;
+    height: 2px; /* Tamaño de la línea */
+    border: none;
+    position: relative;
+    left: -45px;
+    align-items: center;
+    top: 40px;
+    }
 .menu-lateral {
     /* Fondo de la barra lateral */
     background-color: #f1eaea;
@@ -106,65 +140,13 @@ html {
     z-index: 1;
     
 }
-.logo {
-    /* Flexbox para alinear el ícono y el texto en línea */
-    display: grid;
-   /* align-items: center; /* Centra verticalmente los elementos dentro de este contenedor */
-    /* Margen inferior para separar el logo del resto del contenido */
-    margin-bottom: 10px; /* Espacio adicional por debajo del logo */
-    position:relative;
-    right: -1px;
-    top:-20px;
-    width: 90px;
-    /* Tamaño del ícono */
-    font-size: 24px; /* Tamaño del texto para el ícono */
-    margin: 30px;
-    padding: 5;
-}
-
-
-.text-name-marca{
-transform: translateY(-50px);
-margin-bottom: -50px; /** Espacio adicional por debajo del texto **/
-font-weight:bold; /** Negrita el texto **/
-text-align: center; /** Centra el texto **/
-font-size: 30px; /**Tamaño del texto **/
-}
-
-
-/*---------Linea debajo del texto-------------*/
-hr {
-background-color: rgb(5, 4, 4);
-opacity: 80%;
-width: 150%;
-height: 2px; /* Tamaño de la línea */
-border: none;
-position: relative;
-left: -45px;
-align-items: center;
-top: 40px;
-}
-
-footer {
-    background-color: #f1eaea;
-    color: rgb(0, 0, 0);
-    text-align: center; /* Centra el texto */
-    padding: 20px 0; 
-    width: 137%; /* Ajusta el ancho al 86% de la pantalla */
-    position: static; /* El pie de página se coloca después del contenido */
-    height: 40px; /* Altura fija **/
-    transform: translateY(40px);
-}   
-
 /* Estilos para la lista del menú principal */
 .menu {
     /* Eliminamos las viñetas de la lista */
-    list-style: none; /* Sin viñetas en la lista */
-    
+    list-style: none; /* Sin viñetas en la lista */  
     /* Eliminamos el padding predeterminado */
     padding: 0; /* Sin espacio interior en la lista */
 }
-
 /* Estilos para cada elemento de la lista */
 .menu li {
     /* Espacio inferior entre cada opción del menú */
@@ -172,7 +154,6 @@ footer {
     position: relative;
     left: -10px;
 }
-
 /* Estilos para los enlaces dentro del menú */
 .menu a {
     /* Flexbox para alinear el ícono y el texto en cada enlace */
@@ -197,7 +178,6 @@ footer {
     /* Establecemos el color de fondo de los enlaces */
     background-color: #0d6efd; /* Fondo negro para los enlaces */
 }
-
 /* Estilos para los submenús dentro de los elementos del menú */
 .submenu {
     /* Los submenús no se muestran por defecto */
@@ -212,9 +192,18 @@ footer {
     /* Quitamos las viñetas del submenú */
     list-style: none; /* Sin viñetas en el submenú */
 }
+/**------------------------------------------------------------------------------------------------------------------------*/
 
-
-    
+footer {
+    background-color: #f1eaea;
+    color: rgb(0, 0, 0);
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; 
+    width: 137%; /* Ajusta el ancho al 86% de la pantalla */
+    position: static; /* El pie de página se coloca después del contenido */
+    height: 40px; /* Altura fija **/
+    transform: translateY(40px);
+}  
 
    
 /*-------------------------------------Dispositivos Responsive------------------------------------------------------------*/
