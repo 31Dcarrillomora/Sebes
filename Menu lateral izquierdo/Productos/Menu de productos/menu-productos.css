@@ -194,16 +194,107 @@ hr {
 }
 /**------------------------------------------------------------------------------------------------------------------------*/
 
+/**------------------------------------------Pie de Página----------------------------------------------------------------------------*/
+
 footer {
-    background-color: #f1eaea;
+   
+    background-color: #f1eaea; 
+    color: #000000; /* Texto*/
+    text-align: center; 
+    position: relative;
+    left: 260px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 115.41%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+} 
+
+a {
+    text-decoration: none;
+}
+
+.copyright{
+
     color: rgb(0, 0, 0);
-    text-align: center; /* Centra el texto */
-    padding: 20px 0; 
-    width: 137%; /* Ajusta el ancho al 86% de la pantalla */
-    position: static; /* El pie de página se coloca después del contenido */
-    height: 40px; /* Altura fija **/
-    transform: translateY(40px);
-}  
+}
+
+.copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+    
+    }
+
+footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+
+}
+
+.social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+}
+
+.social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+.social-link.facebook:hover {
+    color: #007bff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+.social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045 );
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+
+.social-link.facebook {
+    color: #000000; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+.social-link.youtube {
+    color: #000000; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.social-link.instagram {
+    color: #000000; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.social-link.linkedin {
+    color: #000000; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
 
    
 /*-------------------------------------Dispositivos Responsive------------------------------------------------------------*/

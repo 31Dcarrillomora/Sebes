@@ -53,6 +53,40 @@ html {
 
 
 /* -----------------------------Estilos generales de menu Lateral izquierdo------------------------------------------- */
+.logo {
+    /* Flexbox para alinear el ícono y el texto en línea */
+    display: grid;
+   /* align-items: center; /* Centra verticalmente los elementos dentro de este contenedor */
+    /* Margen inferior para separar el logo del resto del contenido */
+    margin-bottom: 10px; /* Espacio adicional por debajo del logo */
+    position:relative;
+    right: -1px;
+    top:-20px;
+    width: 90px;
+    /* Tamaño del ícono */
+    font-size: 24px; /* Tamaño del texto para el ícono */
+    margin: 30px;
+    padding: 5;
+}
+.text-name-marca{
+transform: translateY(-50px);
+margin-bottom: -50px; /** Espacio adicional por debajo del texto **/
+font-weight:bold; /** Negrita el texto **/
+text-align: center; /** Centra el texto **/
+font-size: 30px; /**Tamaño del texto **/
+}
+/*---------Linea debajo del texto-------------*/
+hr {
+    background-color: rgb(5, 4, 4);
+    opacity: 80%;
+    width: 150%;
+    height: 2px; /* Tamaño de la línea */
+    border: none;
+    position: relative;
+    left: -45px;
+    align-items: center;
+    top: 40px;
+    }
 .menu-lateral {
     /* Fondo de la barra lateral */
     background-color: #f1eaea;
@@ -77,73 +111,13 @@ html {
     z-index: 1;
     
 }
-.text-name-marca{
-    margin-bottom: 9px; /* Espacio adicional por debajo del texto */
-    font-weight: bold; /* Negrita el texto */
-    text-align: center; /* Centra el texto */
-    font-size: 30px; /* Tamaño del texto */
-    padding-bottom: 20px; /* Ajusta este valor según necesites */
-}
-
-.logo {
-    /* Flexbox para alinear el ícono y el texto en línea */
-    display: grid;
-   /* align-items: center; /* Centra verticalmente los elementos dentro de este contenedor */
-    /* Margen inferior para separar el logo del resto del contenido */
-    margin-bottom: 10px; /* Espacio adicional por debajo del logo */
-    position:relative;
-    right: -1px;
-    top:-20px;
-    width: 90px;
-    /* Tamaño del ícono */
-    font-size: 24px; /* Tamaño del texto para el ícono */
-    margin: 30px;
-    padding: 5;
-}
-
-
-.text-name-marca{
-transform: translateY(-50px);
-margin-bottom: -50px; /** Espacio adicional por debajo del texto **/
-font-weight:bold; /** Negrita el texto **/
-text-align: center; /** Centra el texto **/
-font-size: 30px; /**Tamaño del texto **/
-}
-
-
-/*---------Linea debajo del texto-------------*/
-hr {
-background-color: rgb(5, 4, 4);
-opacity: 80%;
-width: 150%;
-height: 2px; /* Tamaño de la línea */
-border: none;
-position: relative;
-left: -45px;
-align-items: center;
-top: 40px;
-}
-
-footer {
-    background-color: #f1eaea;
-    color: rgb(0, 0, 0);
-    text-align: center; /* Centra el texto */
-    padding: 20px 0; 
-    width: 137%; /* Ajusta el ancho al 86% de la pantalla */
-    position: static; /* El pie de página se coloca después del contenido */
-    height: 40px; /* Altura fija **/
-    transform: translateY(40px);
-}   
-
 /* Estilos para la lista del menú principal */
 .menu {
     /* Eliminamos las viñetas de la lista */
-    list-style: none; /* Sin viñetas en la lista */
-    
+    list-style: none; /* Sin viñetas en la lista */  
     /* Eliminamos el padding predeterminado */
     padding: 0; /* Sin espacio interior en la lista */
 }
-
 /* Estilos para cada elemento de la lista */
 .menu li {
     /* Espacio inferior entre cada opción del menú */
@@ -151,7 +125,6 @@ footer {
     position: relative;
     left: -10px;
 }
-
 /* Estilos para los enlaces dentro del menú */
 .menu a {
     /* Flexbox para alinear el ícono y el texto en cada enlace */
@@ -176,7 +149,6 @@ footer {
     /* Establecemos el color de fondo de los enlaces */
     background-color: #0d6efd; /* Fondo negro para los enlaces */
 }
-
 /* Estilos para los submenús dentro de los elementos del menú */
 .submenu {
     /* Los submenús no se muestran por defecto */
@@ -190,7 +162,109 @@ footer {
     
     /* Quitamos las viñetas del submenú */
     list-style: none; /* Sin viñetas en el submenú */
+
 }
+
+/**------------------------------------------Pie de Página----------------------------------------------------------------------------*/
+
+footer {
+   
+    background-color: #f1eaea; 
+    color: #000000; /* Texto*/
+    text-align: center; 
+    position: relative;
+    left: 241px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 111.81%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+} 
+
+a {
+    text-decoration: none;
+}
+
+.copyright{
+
+    color: rgb(0, 0, 0);
+}
+
+.copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+    
+    }
+
+footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+
+}
+
+.social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+}
+
+.social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+.social-link.facebook:hover {
+    color: #007bff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+.social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045 );
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+
+.social-link.facebook {
+    color: #000000; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+.social-link.youtube {
+    color: #000000; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.social-link.instagram {
+    color: #000000; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; 
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.social-link.linkedin {
+    color: #000000; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
     
