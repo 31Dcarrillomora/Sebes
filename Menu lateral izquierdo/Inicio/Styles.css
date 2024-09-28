@@ -247,9 +247,9 @@ footer {
     color: #000000; /* Texto*/
     text-align: center; 
     position: relative;
-    left: -50px;
+    left: 260px;
     padding: 20px 0; /* Espacio interno dentro del pie de página */
-    width: 104.29%; /* Añadido para mantener consistencia */
+    width: 115.41%; /* Añadido para mantener consistencia */
     transform: translateY(48px);
 } 
 
@@ -259,7 +259,7 @@ a {
 
 .copyright{
 
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .copyright:hover {
@@ -309,14 +309,14 @@ footer .social-media a {
 
 
 .social-link.facebook {
-    color: #ffffff; /* texto */
+    color: #000000; /* texto */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
     font-size: 18px; 
     transition: color 0.3s; /* Transición suave para el cambio de color */
 }
 .social-link.youtube {
-    color: #ffffff; /* texto */
+    color: #000000; /* texto */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
     font-size: 18px; 
@@ -324,7 +324,7 @@ footer .social-media a {
 }
 
 .social-link.instagram {
-    color: #ffffff; /* Texto */
+    color: #000000; /* Texto */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
     font-size: 18px; 
@@ -332,7 +332,7 @@ footer .social-media a {
 }
 
 .social-link.linkedin {
-    color: #ffffff; /* Color de LinkedIn */
+    color: #000000; /* Color de LinkedIn */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
     font-size: 18px; /* Tamaño de fuente */
