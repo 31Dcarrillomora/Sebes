@@ -164,27 +164,16 @@ hr {
     top: 40px;
     }
 .menu-lateral {
+    display: grid;
     /* Fondo de la barra lateral */
     background-color: #f1eaea;
-    
     /* Ancho fijo de la barra lateral */
     width: 220px;
-    
-    /* Espacio interior alrededor del contenido */
+    height: 20px;
     padding: 30px;
-    position: fixed;
     left: 0;
     top: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    
-    /* Usamos CSS Grid para organizar las secciones de la barra (logo, menú y usuario) */
-    display: grid;
-    
-    /* El grid tiene 3 filas: auto (tamaño automático para el logo), 1fr (ocupa todo el espacio disponible para el menú), y auto para la parte inferior (usuario) */
-    grid-template-rows: auto 1fr auto;
-    z-index: 1;
+    z-index: 1000;
     
 }
 /* Estilos para la lista del menú principal */
@@ -238,7 +227,9 @@ hr {
     
     /* Quitamos las viñetas del submenú */
     list-style: none; /* Sin viñetas en el submenú */
+
 }
+
 /**------------------------------------------Pie de Página----------------------------------------------------------------------------*/
 
 footer {
@@ -246,10 +237,8 @@ footer {
     background-color: #f1eaea; 
     color: #000000; /* Texto*/
     text-align: center; 
-    position: relative;
-    left: 260px;
     padding: 20px 0; /* Espacio interno dentro del pie de página */
-    width: 115.41%; /* Añadido para mantener consistencia */
+    
     transform: translateY(48px);
 } 
 
@@ -341,89 +330,252 @@ footer .social-media a {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
+    
+
+   
 /*-------------------------------------Dispositivos Responsive------------------------------------------------------------*/
 
-/* desconocido (más de 100px) */
+/* desconocido (más de 100px)📱 */
 @media (min-width: 100px) {
     .Contenedor {
-        display: grid;
-        grid-template-columns: 350px; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
-/* desconocido (más de 200px) */
+/* desconocido (más de 200px)📱 */
 @media (min-width: 200px) {
     .Contenedor {
-        display: grid;
-        grid-template-columns:350px; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
-/* desconocido (más de 300px) */
+/* desconocido (más de 300px)📱 */
 @media (min-width: 300px) {
     .Contenedor {
-        display: grid;
-        grid-template-columns: 350px; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
-/* desconocido (más de 400px) */
+/* desconocido (más de 400px)📱 */
 @media (min-width: 400px) {
     .Contenedor {
-        display: grid;
-        grid-template-columns: 350px; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
                 
 
-/* desconocido (más de 500px) */
+/* desconocido (más de 500px)📱 */
 @media (min-width: 500px) {
     .Contenedor {
-        display: grid;
-        grid-template-columns:  350px; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
-/* desconocido (más de 600px) */
+/* desconocido (más de 600px)📱 */
 @media (min-width: 600px) {
     .Contenedor {
-        display: grid;
-        grid-template-columns:  350px; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
 
-/* desconocido (más de 700px) */
+/* desconocido (más de 700px)📱 */
 @media (min-width: 700px) {
     .Contenedor {
-        display: grid;
-        grid-template-columns:  350px; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
-/* desconocido (más de 800px) */
+/* desconocido (más de 800px)📱 */
 @media (min-width: 800px) {
     .Contenedor {
-        grid-template-columns: 350px ; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
         
 /* desconocido (más de 900px) */
 @media (min-width: 900px) {
     .Contenedor {
-        grid-template-columns: 350px ; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
 /* desconocido (más de 1000px) ----*/
 @media (min-width: 1000px) {
     .Contenedor {
-        grid-template-columns: 350px ; /* Cuatro columnas de 200px */
-            }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
 
 /* Para pantallas medianas (tablets) */
 @media (min-width: 768px) {
     .Contenedor {
-        grid-template-columns:  350px ; /* Cuatro columnas de 200px */
-           }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 109.1%;
+        position: relative;
+        left: -30px;
+            } 
+       .tarjetas{
+        width: 1070px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
 /* Para pantallas grandes (laptops y escritorios) */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .Contenedor {
-        grid-template-columns:  300px; /* Cuatro columnas de 200px */
-        
-       }}
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
+       }
+       footer {
+        width: 140.1%;
+        position: relative;
+        left: 28px;
+            } 
+       .tarjetas{
+        width: 900px;
+       } 
+       .menu-lateral{
+        position:fixed;
+        height: 590px;
+       }
+    
+    }
 
 /*---------------------------------------------------------------------------------------------------------------*/
