@@ -443,7 +443,7 @@ footer .social-media a {
 /* desconocido (más de 1000px) ----*/
 @media (min-width: 1000px) {
     .Contenedor {
-        grid-template-columns:  0px; /* Cuatro columnas de 200px */
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
        }
        footer {
         width: 140.1%;
@@ -451,8 +451,7 @@ footer .social-media a {
         left: -30px;
             } 
        .tarjetas{
-        
-        
+        width: 900px;
        } 
        .menu-lateral{
         position:fixed;
@@ -465,20 +464,19 @@ footer .social-media a {
 /* Para pantallas medianas (tablets) */
 @media (min-width: 768px) {
     .Contenedor {
-        grid-template-columns: 500px; /* Cuatro columnas de 200px */
+        grid-template-columns:  500px; /* Cuatro columnas de 200px */
        }
        footer {
-        width: 151.1%;
+        width: 109.1%;
         position: relative;
         left: -30px;
             } 
        .tarjetas{
-        width: 830px;
-
+        width: 1070px;
        } 
        .menu-lateral{
-        position:fixed !important;
-        height: 590px !important;
+        position:fixed;
+        height: 590px;
        }
     
     }
