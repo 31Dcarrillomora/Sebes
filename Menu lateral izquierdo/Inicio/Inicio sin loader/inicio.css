@@ -2,6 +2,8 @@ html {
     background-color:rgb(8, 197, 255) ;
     background-size: 100%;
     width: fit-content;
+    touch-action: manipulation;
+  -ms-touch-action: manipulation;
 }
 
 /**-----------Texto de cabeza------------------*/
