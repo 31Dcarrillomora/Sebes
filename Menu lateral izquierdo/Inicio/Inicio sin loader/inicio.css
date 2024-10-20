@@ -2,6 +2,8 @@ html {
     background-color:rgb(8, 197, 255) ;
     background-size: 100%;
     width: fit-content;
+    touch-action: manipulation;
+  -ms-touch-action: manipulation;
 }
 
 /**-----------Texto de cabeza------------------*/
@@ -478,6 +480,10 @@ footer .social-media a {
        .menu-lateral{
         position:fixed;
         height: 590px;
+       }
+
+       html{
+        background-size: 100vw 100vh;
        }
     
     }
