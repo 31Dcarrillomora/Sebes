@@ -446,12 +446,13 @@ footer .social-media a {
         grid-template-columns:  500px; /* Cuatro columnas de 200px */
        }
        footer {
-        width: 140.1%;
+        width: 150.1%;
         position: relative;
         left: -30px;
             } 
        .tarjetas{
-        width: 900px;
+        width: 100px;
+        
        } 
        .menu-lateral{
         position:fixed;
